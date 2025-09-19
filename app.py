@@ -5,6 +5,13 @@ import time
 from json import dumps
 import streamlit as st
 
+st.set_page_config(
+    page_title="🐽",     # Browser tab title
+    page_icon="🐽",      # Also use the pig emoji as favicon
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 dcr_data = {
       'Created Date(CRM)' : None,
       'Submitted by' : None,
@@ -270,4 +277,5 @@ def main():
 if not st.session_state.logged_in:
     login_form()
 else:
+
     main()
