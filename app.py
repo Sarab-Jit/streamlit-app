@@ -6,8 +6,8 @@ from json import dumps
 import streamlit as st
 
 st.set_page_config(
-    page_title="🐽",     # Browser tab title
-    page_icon="🐽",      # Also use the pig emoji as favicon
+    page_title="🐽",     # Browser tab shows only 🐽
+    page_icon=None,      # No extra emoji favicon
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -210,7 +210,7 @@ if "logged_in" not in st.session_state:
 if 'creds' not in st.session_state:
    st.session_state.creds = creds
 
-st.title("Pending DCRs something :D ")
+st.title("Pending DCRs or something :D ")
 
 def login_form():
     with st.form("login_form"):
@@ -279,3 +279,4 @@ if not st.session_state.logged_in:
 else:
 
     main()
+
