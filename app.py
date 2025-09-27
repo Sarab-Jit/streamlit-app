@@ -7,7 +7,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="🐽",     # Browser tab shows only 🐽
-    page_icon=None,      # No extra emoji favicon
+    page_icon='stick.jpg',      # No extra emoji favicon
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -279,4 +279,5 @@ if not st.session_state.logged_in:
 else:
 
     main()
+
 
