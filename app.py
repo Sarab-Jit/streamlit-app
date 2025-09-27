@@ -6,7 +6,7 @@ from json import dumps
 import streamlit as st
 
 st.set_page_config(
-    page_title="𐦂𖨆𐀪𖠋",     # Browser tab shows only 🐽
+    page_title="•ᴗ•",     # Browser tab shows only 🐽
     page_icon='stick.jpg',      # No extra emoji favicon
     layout="wide",
     initial_sidebar_state="expanded"
@@ -279,6 +279,7 @@ if not st.session_state.logged_in:
 else:
 
     main()
+
 
 
 
